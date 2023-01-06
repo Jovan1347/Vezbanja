@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  height: fit-content;
+  background-image: url("/zadatak5/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border-radius: 8px;
+  display: flex;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+
+.box h2 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.profile {
+  height: 60px;
+  width: 60px;
+  background-image: url("/zadatak5/images/profile.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: -40px;
+  border-radius: 50%;
+  border: solid white 4px;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.text {
+  font-size: larger;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
+@media all and(min-width:768px) {
+  #main {
+    height: 500px;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .box {
+    width: fit-content;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+
+  .left {
+    margin-left: 20px;
+  }
+
+  .profile {
+    margin-top: -50px;
+  }
+
+  .text {
+    margin-bottom: 50px;
+  }
+}

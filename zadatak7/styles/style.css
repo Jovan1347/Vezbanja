@@ -1,0 +1,78 @@
+header {
+  display: flex;
+}
+
+#header-div {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#header-div p {
+  color: #9995b1;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.section-info-item {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section-builder {
+  margin: 0 auto;
+  width: 200px;
+  height: 300px;
+  background-image: url("/zadatak7/images/builder.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-info-item img {
+  width: 50px;
+  height: 50px;
+}
+
+@media all and (min-width: 768px) {
+  #section {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+  }
+  .section-info {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-info-item {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .section-info-item-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-info-item-icon {
+    display: flex;
+    margin-right: 10px;
+  }
+  .section-builder {
+    width: 30%;
+    height: unset;
+    margin: 0 auto;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 10px 0;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("/zadatak4/images/team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmax;
+}
+
+#main {
+  display: flex;
+}
+
+#content {
+  border-radius: 3px;
+  margin: 0 5px;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: auto;
+}
+
+.first {
+  color: red;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.second {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.third {
+  display: flex;
+  color: silver;
+  margin-bottom: 20px;
+}
+
+.fourth {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fourth img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    background: none;
+  }
+  #main {
+    height: 500px;
+    background-image: url("/zadatak4/images/team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  #content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    width: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */

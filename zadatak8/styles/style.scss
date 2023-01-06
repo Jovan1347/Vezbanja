@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+#header-div {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-div-logo {
+  display: flex;
+  margin-right: 10px;
+}
+
+.header-div-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-div-text {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #f1f1f1;
+  padding-left: 10px;
+  color: #323232;
+}
+
+.header-div-text-moto {
+  color: #6c7885;
+}
+
+#section {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-box {
+  border: 2px solid #f1f1f1;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.price-box-name {
+  text-align: center;
+  margin: 20px auto;
+  color: #6c7885;
+}
+
+.price-box-cost {
+  font-size: 32px;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10%;
+  padding-bottom: 20%;
+  color: #6c7885;
+  font-weight: bolder;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    55% 75%,
+    50% 85%,
+    45% 75%,
+    0% 75%
+  );
+}
+
+.price-box-hover:hover {
+  .price-box-cost {
+    background-color: #eb3d25;
+    color: white;
+  }
+
+  .price-box-name {
+    color: black;
+  }
+}
+
+.price-box-info-text {
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  color: #6c7885;
+}
+
+.last {
+  border: none;
+}
+
+.price-box-signup {
+  border: 2px solid #eb3d25;
+  border-radius: 20px;
+  width: 25%;
+  margin-bottom: -17px;
+  margin-left: 35%;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+}
+
+.price-box-signup:hover {
+  background-color: #eb3d25;
+  color: white;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  #header-div {
+    align-items: unset;
+    margin: 20px 0;
+  }
+
+  #section {
+    flex-direction: row;
+  }
+
+  .price-box {
+    margin: 10px;
+  }
+
+  .price-box-cost {
+    padding: 20%;
+    padding-bottom: 40%;
+  }
+
+  .price-box-signup {
+    width: 40%;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -16px;
+  }
+
+  .first {
+    margin-left: 0;
+  }
+}
